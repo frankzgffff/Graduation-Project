@@ -1,0 +1,20 @@
+name: rle-nas
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy>=1.24
+  - pytorch>=2.2
+  - torchvision>=0.17
+  - torchaudio>=2.2
+  - pytorch-cuda=12.1
+  - tqdm>=4.66
+  - tensorboard>=2.16
+  - matplotlib>=3.8
+  - pandas>=2.2
+  - scikit-learn>=1.4
+  - pip:
+      - thop>=0.1.1

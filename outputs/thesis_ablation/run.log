@@ -1,0 +1,9 @@
+2026-03-18 14:37:49,198 | INFO | Initializing population with 4 individuals
+2026-03-18 14:37:53,187 | INFO | Init uid=1 fitness=11.3689 acc=11.46 depth=4 width=1.00
+2026-03-18 14:37:57,236 | INFO | Init uid=2 fitness=7.2265 acc=7.29 depth=4 width=0.75
+2026-03-18 14:38:06,514 | INFO | Init uid=3 fitness=11.3139 acc=11.46 depth=6 width=1.00
+2026-03-18 14:38:14,594 | INFO | Init uid=4 fitness=9.2514 acc=9.38 depth=6 width=0.75
+2026-03-18 14:38:30,575 | INFO | Gen 1 | parent=1 child=5 reward=3.1027 acc=14.58 best=14.4871 diversity=0.6706
+2026-03-18 14:38:56,811 | INFO | Gen 2 | parent=5 child=10 reward=0.0000 acc=14.58 best=14.4871 diversity=0.5961
+2026-03-18 14:38:56,816 | INFO | Search complete | best uid=5 fitness=14.4871
+2026-03-18 14:39:06,803 | INFO | Best summary saved to outputs/thesis_ablation/summary.json

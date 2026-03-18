@@ -1,0 +1,83 @@
+{
+  "best_uid": 8,
+  "best_fitness": 12.4338055,
+  "best_metrics": {
+    "train_loss": 2.3469479084014893,
+    "train_acc1": 13.541666666666666,
+    "val_loss": 2.33215069770813,
+    "val_acc": 12.5,
+    "params_m": 0.025018,
+    "flops_m": 4.396288,
+    "fitness": 12.4338055
+  },
+  "architecture": {
+    "normal_edges": [
+      {
+        "op_name": "avg_pool_3x3",
+        "input_idx": 1
+      },
+      {
+        "op_name": "max_pool_3x3",
+        "input_idx": 0
+      },
+      {
+        "op_name": "dil_conv_3x3",
+        "input_idx": 1
+      },
+      {
+        "op_name": "max_pool_3x3",
+        "input_idx": 1
+      },
+      {
+        "op_name": "max_pool_3x3",
+        "input_idx": 2
+      },
+      {
+        "op_name": "max_pool_3x3",
+        "input_idx": 0
+      },
+      {
+        "op_name": "avg_pool_3x3",
+        "input_idx": 0
+      },
+      {
+        "op_name": "avg_pool_3x3",
+        "input_idx": 4
+      }
+    ],
+    "reduction_edges": [
+      {
+        "op_name": "sep_conv_5x5",
+        "input_idx": 1
+      },
+      {
+        "op_name": "skip_connect",
+        "input_idx": 1
+      },
+      {
+        "op_name": "dil_conv_3x3",
+        "input_idx": 0
+      },
+      {
+        "op_name": "skip_connect",
+        "input_idx": 0
+      },
+      {
+        "op_name": "avg_pool_3x3",
+        "input_idx": 2
+      },
+      {
+        "op_name": "max_pool_3x3",
+        "input_idx": 1
+      },
+      {
+        "op_name": "max_pool_3x3",
+        "input_idx": 0
+      },
+      {
+        "op_name": "avg_pool_3x3",
+        "input_idx": 2
+      }
+    ]
+  }
+}

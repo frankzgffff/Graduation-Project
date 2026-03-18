@@ -1,0 +1,9 @@
+2026-03-18 14:24:06,733 | INFO | Initializing population with 4 individuals
+2026-03-18 14:24:11,079 | INFO | Init individual uid=1 fitness=11.3725 val_acc=11.46
+2026-03-18 14:24:14,798 | INFO | Init individual uid=2 fitness=12.4108 val_acc=12.50
+2026-03-18 14:24:17,669 | INFO | Init individual uid=3 fitness=12.4330 val_acc=12.50
+2026-03-18 14:24:22,310 | INFO | Init individual uid=4 fitness=11.3634 val_acc=11.46
+2026-03-18 14:24:25,435 | INFO | Gen 1 | parent=3 child=5 action=84 fitness=5.1413 reward=-7.2917 best=12.4330
+2026-03-18 14:24:28,517 | INFO | Gen 2 | parent=3 child=6 action=28 fitness=12.4363 reward=0.0034 best=12.4363
+2026-03-18 14:24:28,518 | INFO | Search complete | best uid=6 fitness=12.4363
+2026-03-18 14:24:28,519 | INFO | Best summary saved to outputs/smoke_ablation/summary.json

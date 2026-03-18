@@ -1,0 +1,87 @@
+{
+  "uid": 6,
+  "generation": 2,
+  "fitness": 12.4363347,
+  "metrics": {
+    "train_loss": 2.342409690221151,
+    "train_acc1": 14.583333333333334,
+    "val_loss": 2.3065125942230225,
+    "val_acc": 12.5,
+    "params_m": 0.024002,
+    "flops_m": 4.228352,
+    "fitness": 12.4363347
+  },
+  "parent_uid": 3,
+  "mutation_action": 28,
+  "predicted_fitness": null,
+  "architecture": {
+    "normal_edges": [
+      {
+        "op_name": "avg_pool_3x3",
+        "input_idx": 1
+      },
+      {
+        "op_name": "max_pool_3x3",
+        "input_idx": 0
+      },
+      {
+        "op_name": "max_pool_3x3",
+        "input_idx": 1
+      },
+      {
+        "op_name": "max_pool_3x3",
+        "input_idx": 1
+      },
+      {
+        "op_name": "max_pool_3x3",
+        "input_idx": 2
+      },
+      {
+        "op_name": "max_pool_3x3",
+        "input_idx": 0
+      },
+      {
+        "op_name": "avg_pool_3x3",
+        "input_idx": 0
+      },
+      {
+        "op_name": "avg_pool_3x3",
+        "input_idx": 4
+      }
+    ],
+    "reduction_edges": [
+      {
+        "op_name": "sep_conv_5x5",
+        "input_idx": 1
+      },
+      {
+        "op_name": "skip_connect",
+        "input_idx": 1
+      },
+      {
+        "op_name": "dil_conv_3x3",
+        "input_idx": 0
+      },
+      {
+        "op_name": "dil_conv_3x3",
+        "input_idx": 0
+      },
+      {
+        "op_name": "avg_pool_3x3",
+        "input_idx": 2
+      },
+      {
+        "op_name": "max_pool_3x3",
+        "input_idx": 1
+      },
+      {
+        "op_name": "max_pool_3x3",
+        "input_idx": 0
+      },
+      {
+        "op_name": "avg_pool_3x3",
+        "input_idx": 2
+      }
+    ]
+  }
+}

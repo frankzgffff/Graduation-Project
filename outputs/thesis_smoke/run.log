@@ -1,0 +1,14 @@
+2026-03-18 14:36:27,216 | INFO | Initializing population with 4 individuals
+2026-03-18 14:36:32,018 | INFO | Init uid=1 fitness=11.3689 acc=11.46 depth=4 width=1.00
+2026-03-18 14:36:37,280 | INFO | Init uid=2 fitness=7.2265 acc=7.29 depth=4 width=0.75
+2026-03-18 14:36:46,934 | INFO | Init uid=3 fitness=11.3139 acc=11.46 depth=6 width=1.00
+2026-03-18 14:36:55,066 | INFO | Init uid=4 fitness=9.2514 acc=9.38 depth=6 width=0.75
+2026-03-18 14:37:10,994 | INFO | Gen 1 | parent=1 child=8 reward=1.0417 acc=12.50 best=12.4105 diversity=0.6706
+2026-03-18 14:37:20,603 | INFO | Gen 2 | parent=8 child=10 reward=-1.0417 acc=11.46 best=12.4105 diversity=0.5980
+2026-03-18 14:37:20,658 | INFO | Surrogate fit mse=58.741113
+2026-03-18 14:37:27,446 | INFO | Gen 3 | parent=8 child=11 reward=-1.0193 acc=11.46 best=12.4105 diversity=0.5961
+2026-03-18 14:37:33,420 | INFO | Gen 4 | parent=11 child=14 reward=-0.0186 acc=11.46 best=12.4105 diversity=0.4412
+2026-03-18 14:37:33,451 | INFO | Surrogate fit mse=4.439566
+2026-03-18 14:37:33,479 | INFO | PPO update policy_loss=-0.0309 value_loss=70.1515 entropy=4.9093
+2026-03-18 14:37:33,482 | INFO | Search complete | best uid=8 fitness=12.4105
+2026-03-18 14:37:40,553 | INFO | Best summary saved to outputs/thesis_smoke/summary.json

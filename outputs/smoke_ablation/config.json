@@ -1,0 +1,80 @@
+{
+  "seed": 42,
+  "exp_name": "smoke_ablation",
+  "output_dir": "./outputs",
+  "log_interval": 1,
+  "smoke_test": true,
+  "dataset": {
+    "name": "fake",
+    "root": "./data",
+    "download": false,
+    "image_size": 32,
+    "num_classes": 10,
+    "train_batch_size": 64,
+    "eval_batch_size": 128,
+    "num_workers": 0,
+    "fake_train_size": 192,
+    "fake_val_size": 96
+  },
+  "model": {
+    "init_channels": 8,
+    "layers": 4,
+    "num_nodes": 4,
+    "multiplier": 4,
+    "stem_multiplier": 3,
+    "dropout": 0.0
+  },
+  "search": {
+    "population_size": 6,
+    "sample_size": 4,
+    "init_population_size": 4,
+    "generations": 2,
+    "mutation_candidates": 2,
+    "use_rl": false,
+    "use_surrogate": false,
+    "surrogate_warmup": 12,
+    "surrogate_fit_interval": 5,
+    "op_names": [
+      "skip_connect",
+      "sep_conv_3x3",
+      "sep_conv_5x5",
+      "dil_conv_3x3",
+      "max_pool_3x3",
+      "avg_pool_3x3"
+    ]
+  },
+  "evolution": {
+    "complexity_penalty_flops": 0.015,
+    "complexity_penalty_params": 0.01,
+    "elitism_keep_best": true
+  },
+  "train": {
+    "epochs_per_eval": 1,
+    "lr": 0.025,
+    "momentum": 0.9,
+    "weight_decay": 0.0003,
+    "grad_clip": 5.0,
+    "label_smoothing": 0.0,
+    "device": "cpu"
+  },
+  "ppo": {
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_eps": 0.2,
+    "entropy_coef": 0.01,
+    "value_coef": 0.5,
+    "policy_lr": 0.0003,
+    "epochs": 4,
+    "minibatch_size": 32,
+    "update_interval": 4,
+    "hidden_dim": 256,
+    "max_buffer_size": 512
+  },
+  "predictor": {
+    "hidden_dim": 128,
+    "lr": 0.001,
+    "epochs": 30,
+    "batch_size": 32,
+    "weight_decay": 0.0001
+  }
+}

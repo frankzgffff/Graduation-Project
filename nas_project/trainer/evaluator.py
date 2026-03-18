@@ -15,7 +15,7 @@ from nas_project.utils.metrics import compute_fitness, count_parameters_in_mb
 class ArchitectureEvaluator:
     def __init__(self, config) -> None:
         self.config = config
-        self.device = config.train.device
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.train_loader, self.val_loader = build_dataloaders(config.dataset)
 
     def build_model(self, architecture) -> NASNetwork:

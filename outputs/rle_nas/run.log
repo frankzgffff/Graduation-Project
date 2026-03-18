@@ -1,0 +1,4 @@
+2026-03-18 17:20:01,105 | INFO | Initializing population with 8 individuals
+2026-03-18 17:20:32,522 | INFO | Init uid=1 fitness=59.9774 acc=60.67 depth=6 width=1.25
+2026-03-18 17:21:17,545 | INFO | Init uid=2 fitness=56.7771 acc=57.09 depth=6 width=0.75
+2026-03-18 17:22:06,955 | INFO | Init uid=3 fitness=61.0794 acc=61.69 depth=8 width=1.00

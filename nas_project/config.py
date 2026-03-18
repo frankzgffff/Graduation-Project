@@ -14,7 +14,7 @@ import torch
 class DatasetConfig:
     name: str = "cifar10"
     root: str = "./data"
-    download: bool = False
+    download: bool = True
     image_size: int = 32
     num_classes: int = 10
     train_batch_size: int = 64

@@ -2,3 +2,43 @@
 2026-03-18 17:20:32,522 | INFO | Init uid=1 fitness=59.9774 acc=60.67 depth=6 width=1.25
 2026-03-18 17:21:17,545 | INFO | Init uid=2 fitness=56.7771 acc=57.09 depth=6 width=0.75
 2026-03-18 17:22:06,955 | INFO | Init uid=3 fitness=61.0794 acc=61.69 depth=8 width=1.00
+2026-03-18 17:24:27,503 | INFO | Initializing population with 8 individuals
+2026-03-18 17:24:57,876 | INFO | Init uid=1 fitness=59.9774 acc=60.67 depth=6 width=1.25
+2026-03-18 17:25:42,952 | INFO | Init uid=2 fitness=56.7771 acc=57.09 depth=6 width=0.75
+2026-03-18 17:26:32,695 | INFO | Init uid=3 fitness=61.0794 acc=61.69 depth=8 width=1.00
+2026-03-18 17:27:32,855 | INFO | Init uid=4 fitness=57.4544 acc=58.39 depth=10 width=1.00
+2026-03-18 17:28:14,301 | INFO | Init uid=5 fitness=59.3860 acc=59.78 depth=6 width=1.00
+2026-03-18 17:29:16,178 | INFO | Init uid=6 fitness=59.4450 acc=60.74 depth=10 width=1.25
+2026-03-18 17:30:17,533 | INFO | Init uid=7 fitness=60.4840 acc=61.31 depth=10 width=1.00
+2026-03-18 17:31:05,543 | INFO | Init uid=8 fitness=60.6440 acc=61.41 depth=6 width=1.25
+2026-03-18 17:35:47,151 | INFO | Gen 1 | parent=8 child=9 reward=0.6400 acc=62.05 best=61.2840 diversity=0.7271
+2026-03-18 17:37:19,632 | INFO | Gen 2 | parent=8 child=16 reward=-2.4201 acc=59.08 best=61.2840 diversity=0.6974
+2026-03-18 17:38:50,050 | INFO | Gen 3 | parent=9 child=18 reward=-0.6954 acc=61.05 best=61.2840 diversity=0.6695
+2026-03-18 17:40:28,820 | INFO | Gen 4 | parent=9 child=20 reward=-0.8745 acc=61.39 best=61.2840 diversity=0.6399
+2026-03-18 17:40:28,988 | INFO | PPO update policy_loss=-0.0411 value_loss=220.7128 entropy=4.9192
+2026-03-18 17:42:05,149 | INFO | Gen 5 | parent=3 child=21 reward=1.5962 acc=63.09 best=62.5385 diversity=0.6489
+2026-03-18 17:42:05,222 | INFO | Surrogate fit mse=2828.084086
+2026-03-18 17:43:38,372 | INFO | Gen 6 | parent=8 child=23 reward=-2.3100 acc=59.10 best=62.5385 diversity=0.6261
+2026-03-18 17:45:12,570 | INFO | Gen 7 | parent=21 child=25 reward=-0.1100 acc=62.98 best=62.5385 diversity=0.6294
+2026-03-18 17:46:48,158 | INFO | Gen 8 | parent=21 child=28 reward=-4.1035 acc=59.05 best=62.5385 diversity=0.6284
+2026-03-18 17:46:48,178 | INFO | PPO update policy_loss=-0.0260 value_loss=108.0869 entropy=4.9138
+2026-03-18 17:48:27,970 | INFO | Gen 9 | parent=20 child=29 reward=1.2500 acc=62.64 best=62.5385 diversity=0.6029
+2026-03-18 17:50:09,478 | INFO | Gen 10 | parent=29 child=32 reward=0.5146 acc=63.13 best=62.5385 diversity=0.5583
+2026-03-18 17:50:09,558 | INFO | Surrogate fit mse=193.706446
+2026-03-18 17:51:40,516 | INFO | Gen 11 | parent=9 child=33 reward=3.2903 acc=65.22 best=64.4903 diversity=0.5304
+2026-03-18 17:53:17,087 | INFO | Gen 12 | parent=25 child=36 reward=1.0165 acc=64.06 best=64.4903 diversity=0.5191
+2026-03-18 17:53:17,107 | INFO | PPO update policy_loss=-0.0536 value_loss=15.1743 entropy=4.8977
+2026-03-18 17:54:49,644 | INFO | Gen 13 | parent=21 child=38 reward=-3.2900 acc=59.80 best=64.4903 diversity=0.5022
+2026-03-18 17:56:52,096 | INFO | Gen 14 | parent=7 child=40 reward=-6.5100 acc=54.80 best=64.4903 diversity=0.4887
+2026-03-18 17:58:24,970 | INFO | Gen 15 | parent=8 child=41 reward=-1.7790 acc=59.59 best=64.4903 diversity=0.4510
+2026-03-18 17:58:25,135 | INFO | Surrogate fit mse=10.659999
+2026-03-18 18:00:00,192 | INFO | Gen 16 | parent=25 child=44 reward=-1.9400 acc=61.04 best=64.4903 diversity=0.4733
+2026-03-18 18:00:00,214 | INFO | PPO update policy_loss=-0.0345 value_loss=295.8350 entropy=4.8853
+2026-03-18 18:01:37,219 | INFO | Gen 17 | parent=32 child=45 reward=2.1900 acc=65.32 best=64.4969 diversity=0.4765
+2026-03-18 18:03:10,433 | INFO | Gen 18 | parent=33 child=47 reward=-0.7900 acc=64.43 best=64.4969 diversity=0.4752
+2026-03-18 18:04:50,002 | INFO | Gen 19 | parent=45 child=49 reward=-0.4200 acc=64.90 best=64.4969 diversity=0.4748
+2026-03-18 18:06:21,829 | INFO | Gen 20 | parent=25 child=51 reward=0.6200 acc=63.60 best=64.4969 diversity=0.4846
+2026-03-18 18:06:21,996 | INFO | Surrogate fit mse=4.520943
+2026-03-18 18:06:22,021 | INFO | PPO update policy_loss=-0.0426 value_loss=10.2152 entropy=4.8587
+2026-03-18 18:06:22,022 | INFO | Search complete | best uid=45 fitness=64.4969
+2026-03-18 18:14:42,549 | INFO | Best summary saved to outputs/rle_nas/summary.json

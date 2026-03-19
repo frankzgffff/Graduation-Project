@@ -32,6 +32,7 @@
     "mutation_candidates": 6,
     "candidate_eval_topk": 2,
     "use_rl": true,
+    "use_evolution": true,
     "use_surrogate": true,
     "surrogate_warmup": 12,
     "surrogate_fit_interval": 5,
@@ -53,8 +54,8 @@
     "reward_cost_scale": 1.0
   },
   "train": {
-    "epochs_per_eval": 1,
-    "final_retrain_epochs": 10,
+    "epochs_per_eval": 5,
+    "final_retrain_epochs": 150,
     "lr": 0.025,
     "final_lr": 0.025,
     "momentum": 0.9,

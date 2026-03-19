@@ -43,6 +43,7 @@ class SearchConfig:
     mutation_candidates: int = 6
     candidate_eval_topk: int = 2
     use_rl: bool = True
+    use_evolution: bool = True
     use_surrogate: bool = True
     surrogate_warmup: int = 12
     surrogate_fit_interval: int = 5
@@ -70,8 +71,8 @@ class EvolutionConfig:
 
 @dataclass
 class TrainConfig:
-    epochs_per_eval: int = 1
-    final_retrain_epochs: int = 10
+    epochs_per_eval: int = 5
+    final_retrain_epochs: int = 150
     lr: float = 0.025
     final_lr: float = 0.025
     momentum: float = 0.9

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from typing import Callable
 
 import torch
 import torch.nn as nn
@@ -150,8 +151,15 @@ def fit_model(
     grad_clip: float,
     epochs: int,
     scheduler=None,
-) -> dict[str, float]:
-    history: dict[str, float] = {}
+    epoch_callback: Callable[[dict[str, float]], None] | None = None,
+) -> dict[str, list[float]]:
+    history: dict[str, list[float]] = {
+        "epoch": [],
+        "train_loss": [],
+        "train_acc1": [],
+        "val_loss": [],
+        "val_acc": [],
+    }
     for epoch in range(epochs):
         train_metrics = train_one_epoch(
             model=model,
@@ -164,7 +172,9 @@ def fit_model(
         val_metrics = evaluate(model=model, loader=val_loader, criterion=criterion, device=device)
         if scheduler is not None:
             scheduler.step()
-        history.update(train_metrics)
-        history.update(val_metrics)
-        history["epoch"] = epoch + 1
+        epoch_metrics = {"epoch": epoch + 1, **train_metrics, **val_metrics}
+        for key, value in epoch_metrics.items():
+            history.setdefault(key, []).append(value)
+        if epoch_callback is not None:
+            epoch_callback(epoch_metrics)
     return history

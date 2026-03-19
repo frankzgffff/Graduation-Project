@@ -42,6 +42,9 @@ class ArchitectureEvaluator:
 
     def _summarize_model(self, model, history: dict[str, float]) -> dict[str, float]:
         history = dict(history)
+        for key in ("epoch", "train_loss", "val_loss", "val_acc"):
+            if isinstance(history.get(key), list):
+                history[key] = history[key][-1] if history[key] else 0.0
         history["params_m"] = count_parameters_in_mb(model)
         history["flops_m"] = estimate_flops(
             model,
